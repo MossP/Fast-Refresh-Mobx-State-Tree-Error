@@ -36,7 +36,7 @@ export const screen: React.FC<Props> = observer((props:Props) => {
       </View>
       <View style={{flex:1,justifyContent:'center', alignContent:'center'}}>
         <Text>DataStore Test</Text>
-        <Text>Items visible in store from index.tsx: {taskStore.items.length}</Text></View>
+        <Text>*** Visibility at index.tsx: {taskStore.items.length}</Text></View>
       <View style={{flex:1,backgroundColor:'gray',justifyContent:'center', alignContent:'center'}}>
         <TodoList key={'rootTreeDisplay'} taskStore={taskStore} />
       </View>

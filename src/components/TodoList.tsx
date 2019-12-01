@@ -15,7 +15,7 @@ export const TodoList: React.FC<Props> = observer((props:Props) => {
   return(
     <View style={{backgroundColor:'#e4e4e4', padding:10, flex:1}}>
       <Text>DataStore Test</Text>
-      <View><Text style={{color:'#555555'}}>{items.length}</Text></View>
+      <View><Text style={{color:'#555555', fontWeight:'bold'}}>*** Visibility at TodoList.tsx {items.length}</Text></View>
       <ScrollView automaticallyAdjustContentInsets={true}>
         {items.map((item, idx) => <TodoItem key={idx} todo={item} /> )}
       </ScrollView>
